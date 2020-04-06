@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/onboardingNavHostFragment">
+
+    <fragment
+        android:id="@+id/onboardingNavHostFragment"
+        android:name="com.systems.magora.onboarding.OnboardingNavHostFragment"
+        android:label="OnboardingNavHostFragment" />
+    <fragment
+        android:id="@+id/apodNavHovFragment"
+        android:name="com.systems.magora.apod.ApodNavHovFragment"
+        android:label="ApodNavHovFragment" />
+
+    <action
+        android:id="@+id/action_global_apodNavHovFragment"
+        app:destination="@id/apodNavHovFragment"/>
+</navigation>

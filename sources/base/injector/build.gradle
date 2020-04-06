@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+android {
+    compileSdkVersion Config.compileSdkVersion
+    buildToolsVersion Config.buildToolsVersion
+    defaultConfig {
+        applicationId "com.systems.magora.nasaclient"
+        minSdkVersion Config.minSdkVersion
+        targetSdkVersion Config.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':onboarding')
+    implementation project(':apod')
+    implementation project(':core')
+
+    implementation Dependencies.koin
+    implementation Dependencies.koinViewModel
+    implementation Dependencies.koinScope
+
+    implementation Dependencies.kotlin
+    implementation Dependencies.supportAppCompat
+    implementation Dependencies.androidCore
+
+    implementation Dependencies.constraintLayout
+
+    testImplementation Dependencies.junit
+    androidTestImplementation Dependencies.junitExt
+    androidTestImplementation Dependencies.espresso
+
+    implementation Dependencies.navComp
+
+}
+

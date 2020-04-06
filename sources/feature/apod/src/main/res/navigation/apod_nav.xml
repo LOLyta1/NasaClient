@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/apod_nav"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/apodFragment">
+    <fragment
+        android:id="@+id/apodFragment"
+        android:name="com.systems.magora.apod.ApodFragment"
+        android:label="ApodFragment" >
+        <action
+            android:id="@+id/action_apodFragment_to_selectDataDialog"
+            app:destination="@id/selectDataDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectDataDialog"
+        android:name="com.systems.magora.apod.SelectDataDialog"
+        android:label="fragment_select_data"
+        tools:layout="@layout/fragment_select_data" />
+
+    <action android:id="@+id/action_global_apodFragment" app:destination="@id/apodFragment"/>
+</navigation>

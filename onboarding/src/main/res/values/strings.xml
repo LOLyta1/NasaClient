@@ -1,0 +1,9 @@
+<resources>
+    <string name="apod_onboarding_text">Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</string>
+    <string name="neo_ws_onboarding_text">NeoWs (Near Earth Object Web Service) is a RESTful web service for near earth Asteroid information. With NeoWs a user can: search for Asteroids based on their closest approach date to Earth, lookup a specific Asteroid with its NASA JPL small body id, as well as browse the overall data-set.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="neo_title">Asteroids - NeoWs</string>
+    <string name="apos_title_text">APOD -  Astronomy Picture of the Day</string>
+</resources>

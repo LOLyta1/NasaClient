@@ -1,0 +1,16 @@
+rootProject.name='NasaClient'
+include ':injector'
+project (':injector').projectDir = new File(rootDir, 'sources/base/injector')
+
+include ':core',':onboarding'
+project (':core').projectDir = new File(rootDir, 'sources/base/core')
+
+include ':networking'
+project (':networking').projectDir = new File(rootDir, 'sources/base/networking')
+
+include ':datastore'
+project (':datastore').projectDir = new File(rootDir, 'sources/base/datastore')
+
+include ':apod'
+project (':apod').projectDir = new File(rootDir, 'sources/feature/apod')
+

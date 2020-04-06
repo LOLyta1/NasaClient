@@ -1,0 +1,1 @@
+C:\Android_projects\NasaClient\buildSrc\build\classes\kotlin\main\Config$Companion.class;C:\Android_projects\NasaClient\buildSrc\build\classes\kotlin\main\Config.class;C:\Android_projects\NasaClient\buildSrc\build\classes\kotlin\main\Dependencies$Companion.class;C:\Android_projects\NasaClient\buildSrc\build\classes\kotlin\main\Dependencies.class
